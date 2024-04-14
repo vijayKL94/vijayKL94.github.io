@@ -56,14 +56,14 @@ export const PROJECTS = [
     title: "SCM-Loan Portal",
     image: project2,
     description:
-      "The Loan Management System features three distinct portals catering to sellers, buyers, and administrators. Sellers can apply for loans on behalf of buyers, buyers can directly request loans, and administrators oversee the entire process. Integration with external APIs like Wathq, Gosi, and IBAN verifies financial details. The system ensures efficient loan processing, transparency, and compliance while facilitating seamless communication between all parties involved.",
+      "The Loan Management System comprises three distinct portals catering to sellers, buyers, and administrators. Sellers have the ability to apply for loans on behalf of buyers, while buyers can directly request loans. Administrators oversee the entire process. Integration with external APIs such as Wathq, Gosi, and IBAN verifies financial details, reducing processing times by up to 75%. The system ensures efficient loan processing, transparency, and compliance, facilitating seamless communication among all parties involved.",
     technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
   },
   {
     title: "Khadi India",
     image: project3,
     description:
-      "This system, developed for a state government body, to oversees approximately 1000 employees and 500 centers across the state, responsible for converting raw materials into finished products. These finished products are then supplied to retail shops for sale to customers. Additionally, the system includes supply chain management reports based on timelines. It features a comprehensive system for managing finished product sales orders and billing for retailer shops.",
+      "This system, developed for a state government body, oversees approximately 1000 employees and 500 centers across the state. Its responsibility lies in converting raw materials into finished products, which are subsequently supplied to retail shops for sale to customers. Additionally, the system includes supply chain management reports based on timelines. It features a comprehensive system for managing finished product sales orders and billing for retailer shops, aiming at optimizing operations and sales processes to achieve a 65% increase in efficiency.",
     technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
   },
   {
