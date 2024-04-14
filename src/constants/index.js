@@ -17,14 +17,14 @@ export const EXPERIENCES = [
   {
     year: "Oct 2022 - Present",
     role: "Senior Software Developer",
-    company: "Compunet Connections.",
+    company: "Compunet Connections",
     description: `Senior Software Developer at Compunet Connections. Led a dynamic team in developing and maintaining web applications using a diverse stack, including PHP frameworks such as Laravel and Slim, as well as Python with FastAPI. Managed database operations across MySQL, MSSQL, and MongoDB. Collaborated closely with stakeholders to define project requirements and timelines, ensuring alignment with business objectives. Focused on leading and mentoring team members to deliver scalable and efficient solutions that meet evolving client needs.`,
     technologies: ["PHP", "Python", "FastAPI", "Laravel", "Slim", "MySQL", "MSSQL", "Mongodb"],
   },
   {
     year: "Mar 2021 - Sep 2022",
     role: "Software Developer",
-    company: "Compunet Connections.",
+    company: "Compunet Connections",
     description: `Software Developer at Compunet Connections. Independently developed and maintained web applications using PHP frameworks such as Laravel and Slim. Managed database operations with MySQL and MSSQL. Focused on delivering scalable and efficient solutions to meet client needs.`,
     technologies: ["PHP", "Laravel", "Slim", "MySQL", "MSSQL"],
   },
