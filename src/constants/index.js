@@ -84,7 +84,7 @@ export const PROJECTS = [
     title: "Vehicle Finance",
     image: project6,
     description:
-      "Developed specifically for Hinduja Layland Finance, the Vehicle Finance project focuses on facilitating loan requests for two-wheelers and three-wheelers. Utilizing PHP and Android technologies, it provides a streamlined platform for marketing agents to handle loan applications for these vehicle types. The system includes authentication methods utilizing Aadhaar or PAN to verify customer details, as well as credit score validation based on these identifiers. Furthermore, it offers multiple user roles to cater to the diverse needs of stakeholders within the organization.",
+      "Developed specifically for Hinduja Leyland Finance, the Vehicle Finance project focuses on facilitating loan requests for two-wheelers and three-wheelers. Utilizing PHP and Android technologies, it provides a streamlined platform for marketing agents to handle loan applications for these vehicle types. The system includes authentication methods utilizing Aadhaar or PAN to verify customer details, as well as credit score validation based on these identifiers. Furthermore, it offers multiple user roles to cater to the diverse needs of stakeholders within the organization.",
     technologies: ["Php", "Slim", "MSSQL"],
   },
 ];
