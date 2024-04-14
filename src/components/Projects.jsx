@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [expandedDescriptions, setExpandedDescriptions] = useState({});
     const defaultWidth = '1200px';
     const defaultHeight = '600px';
 
@@ -17,9 +18,15 @@ const Projects = () => {
 
     const handleOverlayClick = (event) => {
         if (event.target === event.currentTarget) {
-            // Close the image only if the overlay is clicked (not the image)
             handleCloseImage();
         }
+    };
+
+    const toggleDescription = (index) => {
+        setExpandedDescriptions({
+            ...expandedDescriptions,
+            [index]: !expandedDescriptions[index]
+        });
     };
 
     return (
@@ -51,7 +58,12 @@ const Projects = () => {
                             className="w-full max-w-xl lg:w-3/4 pr-12"
                         >
                             <h6 className="mb-2 font-semibold">{project.title}</h6>
-                            <p className="mb-4 text-neutral-400 text-justify">{project.description}</p>
+                            <p className="mb-4 text-neutral-400 text-justify">
+                                {expandedDescriptions[index] ? project.description : `${project.description.slice(0, 150)}...`}
+                                <button onClick={() => toggleDescription(index)} className="text-blue-700 hover:underline focus:outline-none pl-1">
+                                    {expandedDescriptions[index] ? "Read Less" : "Read More"}
+                                </button>
+                            </p>
                             {project.technologies.map((tech, index) => (
                                 <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
                             ))}

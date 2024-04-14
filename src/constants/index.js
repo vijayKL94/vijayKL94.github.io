@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/Project360.png";
-import project2 from "../assets/projects/ProjectSCM.png";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/Project-360.png";
+import project2 from "../assets/projects/Project-SCM.png";
+import project3 from "../assets/projects/Project-Khadi.png";
+import project4 from "../assets/projects/Project-TIDCO.png";
+import project5 from "../assets/projects/Project-Onboarding.png"
+import project6 from "../assets/projects/Project-TwoWheeler.png"
 
 export const LINKEDIN_PROFILE = `https://www.linkedin.com/in/vijay-kl-4984ba26b/`;
 
@@ -58,18 +60,32 @@ export const PROJECTS = [
     technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
   },
   {
-    title: "Portfolio Website",
+    title: "Khadi India",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "This system, developed for a state government body, to oversees approximately 1000 employees and 500 centers across the state, responsible for converting raw materials into finished products. These finished products are then supplied to retail shops for sale to customers. Additionally, the system includes supply chain management reports based on timelines. It features a comprehensive system for managing finished product sales orders and billing for retailer shops.",
+    technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
   },
   {
-    title: "Blogging Platform",
+    title: "TIDCO",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Developed for the Tamil Nadu Industrial Development Corporation Ltd, this system handles private company details. It efficiently manages multiple users with distinct roles, each assigned different operations based on their requirements. The system meticulously oversees expenses, investments, and shares of every company registered within it. Additionally, it generates comprehensive reports detailing the profits, expenses, and share market values of each company. Furthermore, the project includes real-time tracking of the day-to-day share market values for all registered companies in the system.",
+    technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
+  },
+  {
+    title: "Onboarding",
+    image: project5,
+    description:
+      "Developed for Hinduja Housing Finance, this system streamlines the employee onboarding process by effectively managing HR personnel, administrators, and employees throughout the organization. It encompasses detailed information on various aspects of onboarding, including PF, ESI, bank details, educational qualifications, and previous work experience. This comprehensive management ensures a smooth onboarding experience for employees. Furthermore, the system generates detailed reports on the onboarding process, conveniently available for download in PDF format.",
+    technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MSSQL"],
+  },
+  {
+    title: "Vehicle Finance",
+    image: project6,
+    description:
+      "Developed specifically for Hinduja Layland Finance, the Vehicle Finance project focuses on facilitating loan requests for two-wheelers and three-wheelers. Utilizing PHP and Android technologies, it provides a streamlined platform for marketing agents to handle loan applications for these vehicle types. The system includes authentication methods utilizing Aadhaar or PAN to verify customer details, as well as credit score validation based on these identifiers. Furthermore, it offers multiple user roles to cater to the diverse needs of stakeholders within the organization.",
+    technologies: ["Php", "Slim", "MSSQL"],
   },
 ];
 
