@@ -56,7 +56,7 @@ export const PROJECTS = [
     title: "SCM-Loan Portal",
     image: project2,
     description:
-      "The Loan Management System comprises three distinct portals catering to sellers, buyers, and administrators. Sellers have the ability to apply for loans on behalf of buyers, while buyers can directly request loans. Administrators oversee the entire process. Integration with external APIs such as Wathq, Gosi, and IBAN verifies financial details, reducing processing times by up to 75%. The system ensures efficient loan processing, transparency, and compliance, facilitating seamless communication among all parties involved.",
+      "The Loan Management System consists of three distinct portals catering to sellers, buyers, and administrators. Sellers can apply for loans on behalf of buyers, while buyers can directly request loans. Administrators oversee the entire process. Integration with external APIs such as Wathq, Gosi, and IBAN verifies financial details, reducing processing times by up to 75%. The system handles three loan types (POS, Flat, Bullet), ensuring efficient loan processing, transparency, and compliance, facilitating seamless communication among all parties involved.",
     technologies: ["Php", "Laravel", "Javascript", "Ajax", "Bootstrap", "MySql"],
   },
   {
