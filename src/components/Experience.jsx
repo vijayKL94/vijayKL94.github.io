@@ -74,8 +74,8 @@ const EventCard = ({ year, role, company, description, technologies, textAlign }
                 {role} - {" "}
                 <span className="text-sm text-purple-100">{company}</span>
             </h6>
-            <div className="text-sm text-gray-300">{year}</div>
-            <p className="mb-4 text-justify">{description}</p>
+            <div className="text-sm text-gray-200">{year}</div>
+            <p className="mb-4 text-justify text-gray-400">{description}</p>
             <div className="flex flex-wrap">
                 {technologies.map((tech, index) => (
                     <span key={index} className="mr-2 mt-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
