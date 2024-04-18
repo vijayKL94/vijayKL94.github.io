@@ -4,6 +4,16 @@ import { GrMysql } from "react-icons/gr";
 import { SiFastapi } from "react-icons/si";
 import { motion } from "framer-motion";
 
+// Define constants for icons
+const icons = [
+    { Icon: FaPython, color: "text-cyan-600", text: "Python" },
+    { Icon: DiPhp, color: "text-[#335e9e]", text: "PHP" },
+    { Icon: FaLaravel, color: "text-red-600", text: "Laravel" },
+    { Icon: SiFastapi, color: "text-[#00868d]", text: "FastAPI" },
+    { Icon: GrMysql, color: "text-cyan-900", text: "MySQL" },
+];
+
+// Define motion variants function
 const iconVariants = (duration) => ({
     initial: { y: -10 },
     animate: {
@@ -33,49 +43,21 @@ const Technologies = () => {
                 transition={{ duration: 1.5 }}
                 className="flex flex-wrap items-center justify-center gap-4"
             >
-                <motion.div
-                    variants={iconVariants(2.5)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                >
-                    <FaPython className="text-7xl text-cyan-600" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(3)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                >
-                    <DiPhp className="text-7xl text-[#335e9e]" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(5)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                >
-                    <FaLaravel className="text-7xl text-red-600" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(4)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                >
-                    <SiFastapi className="text-7xl text-[#00868d]" />
-                </motion.div>
-                <motion.div
-                    variants={iconVariants(2.5)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4"
-                >
-                    <GrMysql className="text-7xl text-cyan-900" />
-                </motion.div>
+                {icons.map((icon, index) => (
+                    <motion.div
+                        key={index}
+                        variants={iconVariants(2.5 + index)}
+                        initial="initial"
+                        animate="animate"
+                        className="rounded-2xl border-4 border-neutral-800 p-4 flex flex-col items-center"
+                    >
+                        <icon.Icon className={`text-7xl ${icon.color}`} />
+                        <p className={`text-center text-md mt-2 pt-1 ${icon.color}`}>{icon.text}</p>
+                    </motion.div>
+                ))}
             </motion.div>
         </div>
     )
 }
 
-export default Technologies
+export default Technologies;
