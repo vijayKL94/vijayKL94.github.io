@@ -1,32 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { MdClose } from "react-icons/md";
 
 const Projects = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
-    const [expandedDescriptions, setExpandedDescriptions] = useState({});
-    const defaultWidth = '1200px';
-    const defaultHeight = '600px';
+    const [modalOpen, setModalOpen] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
+    const modalRef = useRef(null);
 
-    const handleImageClick = (image) => {
-        setSelectedImage(image);
-    };
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                closeModal();
+            }
+        };
 
-    const handleCloseImage = () => {
-        setSelectedImage(null);
-    };
-
-    const handleOverlayClick = (event) => {
-        if (event.target === event.currentTarget) {
-            handleCloseImage();
+        if (modalOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
         }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [modalOpen]);
+
+    const openModal = (project) => {
+        setSelectedProject(project);
+        setModalOpen(true);
     };
 
-    const toggleDescription = (index) => {
-        setExpandedDescriptions({
-            ...expandedDescriptions,
-            [index]: !expandedDescriptions[index]
-        });
+    const closeModal = () => {
+        setSelectedProject(null);
+        setModalOpen(false);
     };
 
     return (
@@ -42,38 +49,84 @@ const Projects = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 {PROJECTS.map((project, index) => (
                     <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                        <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0, x: -100 }}
-                            transition={{ duration: 1 }}
+                        <div
                             className="w-full lg:w-1/4"
-                            onClick={() => handleImageClick(project.image)}
+                            onClick={() => openModal(project)}
                         >
-                            <img src={project.image} width={150} height={150} alt={project.title} className="my-6 rounded cursor-pointer" />
-                        </motion.div>
-                        <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0, x: 100 }}
-                            transition={{ duration: 1 }}
-                            className="w-full max-w-xl lg:w-3/4 pr-12 pl-6"
+                            <motion.img
+                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, x: -100 }}
+                                transition={{ duration: 1 }}
+                                src={project.image}
+                                width={150}
+                                height={150}
+                                alt={project.title}
+                                className="my-6 rounded cursor-pointer"
+                            />
+                        </div>
+                        <div
+                            className="w-full max-w-xl lg:w-3/4 pr-12 pl-6 cursor-pointer"
                         >
                             <h6 className="mb-2 font-semibold">{project.title}</h6>
                             <p className="mb-4 text-neutral-400 text-justify">
-                                {expandedDescriptions[index] ? project.description : `${project.description.slice(0, 150)}...`}
-                                <button onClick={() => toggleDescription(index)} className="text-blue-700 hover:underline focus:outline-none pl-1">
-                                    {expandedDescriptions[index] ? "Read Less" : "Read More"}
-                                </button>
+                                {project.description.length > 100 ? (
+                                    <>
+                                        {project.description.substring(0, 150)}
+                                        <span>...</span>{" "}
+                                        <button
+                                            onClick={() => openModal(project)}
+                                            className="text-purple-600 underline"
+                                        >
+                                            Read More
+                                        </button>
+                                    </>
+                                ) : (
+                                    project.description
+                                )}
                             </p>
                             {project.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-600">{tech}</span>
+                                <span
+                                    key={index}
+                                    className="mr-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-600"
+                                >
+                                    {tech}
+                                </span>
                             ))}
-                        </motion.div>
+                        </div>
                     </div>
                 ))}
             </div>
-            {selectedImage && (
-                <div className="fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-90 flex justify-center items-center" onClick={handleOverlayClick}>
-                    <img src={selectedImage} alt="Full screen" className="max-h-full max-w-full" style={{ width: defaultWidth, height: defaultHeight }} />
+
+            {modalOpen && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center">
+                    <div ref={modalRef}>
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 0.5 }}
+                            className="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-lg p-8 max-w-3xl overflow-y-auto relative"
+                        >
+                            <button
+                                onClick={closeModal}
+                                className="absolute top-2 right-2 bg-purple-600 rounded-2xl text-white hover:text-gray-300"
+                            >
+                                <MdClose size={28} />
+                            </button>
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.title}
+                                className="mt-1 mx-auto mb-4 rounded-lg"
+                                width="auto"
+                                height={450}
+                            />
+                            <h2 className="text-2xl font-semibold mb-2 underline">
+                                {selectedProject.title}
+                            </h2>
+                            <p className="text-neutral-300 mb-4 text-justify">
+                                {selectedProject.description}
+                            </p>
+                        </motion.div>
+                    </div>
                 </div>
             )}
         </div>
