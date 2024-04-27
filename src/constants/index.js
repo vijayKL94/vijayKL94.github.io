@@ -2,8 +2,21 @@ import project1 from "../assets/projects/Project-360.png";
 import project2 from "../assets/projects/Project-SCM.png";
 import project3 from "../assets/projects/Project-Khadi.png";
 import project4 from "../assets/projects/Project-TIDCO.png";
-import project5 from "../assets/projects/Project-Onboarding.png"
-import project6 from "../assets/projects/Project-TwoWheeler.png"
+import project5 from "../assets/projects/Project-Onboarding.png";
+import project6 from "../assets/projects/Project-TwoWheeler.png";
+import front1 from "../assets/technologies/html5-logo.png";
+import front2 from "../assets/technologies/CSS3_logo.png";
+import front3 from "../assets/technologies/JavaScript-logo.png";
+import front4 from "../assets/technologies/bootstrap-logo-shadow.png";
+import front5 from "../assets/technologies/tailwind-logo.png";
+import back1 from "../assets/technologies/php-logo.svg";
+import back2 from "../assets/technologies/python-original.svg";
+import back3 from "../assets/technologies/laravel.svg";
+import back4 from "../assets/technologies/fastapi-white.svg";
+import back5 from "../assets/technologies/mysql-original.svg";
+import back6 from "../assets/technologies/mssql-server.png";
+import back7 from "../assets/technologies/slim_logo.png";
+import back8 from "../assets/technologies/lumen-logo.png";
 
 export const LINKEDIN_PROFILE = `https://www.linkedin.com/in/vijay-kl-4984ba26b/`;
 
@@ -20,7 +33,7 @@ export const EXPERIENCES = [
     company: "Compunet Connections",
     direction: "left",
     description: `Senior Software Developer at Compunet Connections. Led a dynamic team in developing and maintaining web applications using a diverse stack, including PHP frameworks such as Laravel and Slim, as well as Python with FastAPI. Managed database operations across MySQL, MSSQL, and MongoDB. Collaborated closely with stakeholders to define project requirements and timelines, ensuring alignment with business objectives. Focused on leading and mentoring team members to deliver scalable and efficient solutions that meet evolving client needs.`,
-    technologies: ["PHP", "Python", "FastAPI", "Laravel", "Slim", "MySQL", "MSSQL", "Mongodb"],
+    technologies: ["PHP", "Python", "JavaScript", "FastAPI", "Laravel", "Slim", "MySQL", "MSSQL", "Mongodb"],
   },
   {
     year: "Mar 2021 - Sep 2022",
@@ -28,7 +41,7 @@ export const EXPERIENCES = [
     company: "Compunet Connections",
     direction: "right",
     description: `Software Developer at Compunet Connections. Independently developed and maintained web applications using PHP frameworks such as Laravel and Slim. Managed database operations with MySQL and MSSQL. Focused on delivering scalable and efficient solutions to meet client needs.`,
-    technologies: ["PHP", "Laravel", "Slim", "MySQL", "MSSQL"],
+    technologies: ["PHP", "JavaScript", "Laravel", "Slim", "MySQL", "MSSQL"],
   },
   {
     year: "Dec 2018 - Feb 2021",
@@ -91,6 +104,53 @@ export const PROJECTS = [
       "Developed specifically for Hinduja Leyland Finance, the Vehicle Finance project focuses on facilitating loan requests for two-wheelers and three-wheelers. Utilizing PHP and Android technologies, it provides a streamlined platform for marketing agents to handle loan applications for these vehicle types. The system includes authentication methods utilizing Aadhaar or PAN to verify customer details, as well as credit score validation based on these identifiers. Furthermore, it offers multiple user roles to cater to the diverse needs of stakeholders within the organization.",
     technologies: ["Php", "Slim", "MSSQL"],
   },
+];
+
+export const FRONTTECH = [
+  {
+    title: "HTML",
+    image: front1,
+  }, {
+    title: "CSS",
+    image: front2,
+  }, {
+    title: "JavaScript",
+    image: front3,
+  }, {
+    title: "BootStrap",
+    image: front4,
+  }, {
+    title: "Tailwind CSS",
+    image: front5,
+  },
+];
+
+export const BACKTECH = [
+  {
+    title: "PHP",
+    image: back1,
+  }, {
+    title: "Python",
+    image: back2,
+  }, {
+    title: "Laravel",
+    image: back3,
+  }, {
+    title: "FastAPI",
+    image: back4,
+  }, {
+    title: "MySql",
+    image: back5,
+  }, {
+    title: "MSSQL",
+    image: back6,
+  }, {
+    title: "Slim",
+    image: back7,
+  }, {
+    title: "Lumen",
+    image: back8,
+  }
 ];
 
 export const CONTACT = {
