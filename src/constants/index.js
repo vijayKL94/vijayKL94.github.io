@@ -22,16 +22,25 @@ export const LINKEDIN_PROFILE = `https://www.linkedin.com/in/vijay-kl-4984ba26b/
 
 export const GITHUB_PROFILE = `https://github.com/vijayKL94`;
 
-export const HERO_CONTENT = `I am a passionate back-end developer with over 5 years of expertise in PHP and Python, specializing in crafting robust server-side solutions using frameworks such as Laravel and FastAPI. Proficient in database management, I have hands-on experience in MySQL, MSSQL, and MongoDB. Skilled in optimizing performance and scalability for web applications, I am committed to delivering high-quality solutions that drive business growth and enhance user experiences.`;
+export const HERO_CONTENT = `I am a passionate back-end developer with over 6 years of expertise in PHP and Python, specializing in crafting robust server-side solutions using frameworks such as Laravel and FastAPI. Proficient in database management, I have hands-on experience in MySQL, MSSQL, and MongoDB. Skilled in optimizing performance and scalability for web applications, I am committed to delivering high-quality solutions that drive business growth and enhance user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile backend developer with a passion for creating efficient and user-friendly web applications. With over 5 years of experience in PHP and Python, I specialize in crafting robust server-side solutions using frameworks such as Laravel, Lumen, Slim, Flask, and FastAPI. Additionally, I have extensive knowledge of front-end technologies including JavaScript, AJAX, HTML, CSS, Bootstrap, and TailwindCSS. My expertise extends to database management, with hands-on experience in MySQL, MSSQL, and MongoDB. I am driven by a passion for innovation and problem-solving, committed to delivering high-quality solutions that drive business growth and elevate user experiences.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile backend developer with a passion for creating efficient and user-friendly web applications. With over  years of experience in PHP and Python, I specialize in crafting robust server-side solutions using frameworks such as Laravel, Lumen, Slim, Flask, and FastAPI. Additionally, I have hands-on experience with Shopify development, enabling businesses to build and customize e-commerce platforms with seamless integrations and optimized performance.
+My expertise also extends to front-end technologies including JavaScript, AJAX, HTML, CSS, Bootstrap, and TailwindCSS. I have a strong background in database management, with practical experience in MySQL, MSSQL, and MongoDB. Driven by a passion for innovation and problem-solving, I am committed to delivering high-quality solutions that drive business growth and elevate user experiences.`;
 
 export const EXPERIENCES = [
   {
-    year: "Oct 2022 - Present",
-    role: "Senior Software Developer",
-    company: "Compunet Connections",
+    year: "Aug 2024 - Present",
+    role: "Senior Software Engineer",
+    company: "Tender Software India Pvt Ltd",
     direction: "left",
+    description: `Senior Software Developer at Tender Software India Pvt Ltd. I specialize in maintaining and enhancing web applications using a diverse tech stack. My primary focus includes working with the PHP Laravel framework for robust backend development and leveraging the Shopify platform to deliver tailored e-commerce solutions. I am responsible for ensuring optimal performance, scalability, and security across all web applications.`,
+    technologies: ["PHP", "JavaScript", "Laravel", "MySQL", "Shopify"],
+  },
+  {
+    year: "Oct 2022 - Aug 2024",
+    role: "Senior Software Engineer",
+    company: "Compunet Connections",
+    direction: "right",
     description: `Senior Software Developer at Compunet Connections. Led a dynamic team in developing and maintaining web applications using a diverse stack, including PHP frameworks such as Laravel and Slim, as well as Python with FastAPI. Managed database operations across MySQL, MSSQL, and MongoDB. Collaborated closely with stakeholders to define project requirements and timelines, ensuring alignment with business objectives. Focused on leading and mentoring team members to deliver scalable and efficient solutions that meet evolving client needs.`,
     technologies: ["PHP", "Python", "JavaScript", "FastAPI", "Laravel", "Slim", "MySQL", "MSSQL", "Mongodb"],
   },
@@ -39,7 +48,7 @@ export const EXPERIENCES = [
     year: "Mar 2021 - Sep 2022",
     role: "Software Developer",
     company: "Compunet Connections",
-    direction: "right",
+    direction: "left",
     description: `Software Developer at Compunet Connections. Independently developed and maintained web applications using PHP frameworks such as Laravel and Slim. Managed database operations with MySQL and MSSQL. Focused on delivering scalable and efficient solutions to meet client needs.`,
     technologies: ["PHP", "JavaScript", "Laravel", "Slim", "MySQL", "MSSQL"],
   },
@@ -47,7 +56,7 @@ export const EXPERIENCES = [
     year: "Dec 2018 - Feb 2021",
     role: "Web Developer",
     company: "Skap Technologies",
-    direction: "left",
+    direction: "right",
     description: `As a Web Developer at Skap Technologies, I design and develop web applications primarily using PHP as the backend language. I implement responsive designs and optimize frontend performance by leveraging HTML, Bootstrap, and JavaScript. Additionally, I maintain existing websites to ensure their functionality and performance are up to standards.`,
     technologies: ["PHP", "HTML", "Bootstrap", "JavaScript", "MySQL"],
   },
@@ -55,7 +64,7 @@ export const EXPERIENCES = [
     year: "Jul 2017 - Dec 2018",
     role: "Java Trainer and Administrator",
     company: "Skap Technologies",
-    direction: "right",
+    direction: "left",
     description: `Java Trainer and Administrator at Skap Technologies. Conducted training sessions on Java programming language, delivering comprehensive instruction and support to learners. Acted as a key liaison between development teams and clients, providing regular updates on project progress and addressing any concerns or queries. Additionally, oversaw the maintenance of company-hosted domains to ensure their smooth operation and availability.`,
     technologies: ["Java", "MSSQL", "MySQL"],
   },
