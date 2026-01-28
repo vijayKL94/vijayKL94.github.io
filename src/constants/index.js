@@ -1,22 +1,30 @@
+// imports for project images
 import project1 from "../assets/projects/Project-360.png";
 import project2 from "../assets/projects/Project-SCM.png";
 import project3 from "../assets/projects/Project-Khadi.png";
 import project4 from "../assets/projects/Project-TIDCO.png";
 import project5 from "../assets/projects/Project-Onboarding.png";
 import project6 from "../assets/projects/Project-TwoWheeler.png";
+// imports for front-end technologies
 import front1 from "../assets/technologies/html5-logo.png";
 import front2 from "../assets/technologies/CSS3_logo.png";
 import front3 from "../assets/technologies/JavaScript-logo.png";
 import front4 from "../assets/technologies/bootstrap-logo-shadow.png";
 import front5 from "../assets/technologies/tailwind-logo.png";
+// imports for back-end technologies
 import back1 from "../assets/technologies/php-logo.svg";
 import back2 from "../assets/technologies/python-original.svg";
 import back3 from "../assets/technologies/laravel.svg";
 import back4 from "../assets/technologies/fastapi-white.svg";
-import back5 from "../assets/technologies/mysql-original.svg";
-import back6 from "../assets/technologies/mssql-server.png";
-import back7 from "../assets/technologies/slim_logo.png";
-import back8 from "../assets/technologies/lumen-logo.png";
+import back5 from "../assets/technologies/slim_logo.png";
+import back6 from "../assets/technologies/lumen-logo.png";
+import data1 from "../assets/technologies/mysql-original.svg";
+import data2 from "../assets/technologies/mssql-server.png";
+import data3 from "../assets/technologies/postgresql.png";
+// imports for other technologies
+import other1 from "../assets/technologies/github.png";
+import other2 from "../assets/technologies/bitbucket.png";
+import other3 from "../assets/technologies/photoshop.png";
 
 export const LINKEDIN_PROFILE = `https://www.linkedin.com/in/vijay-kl-4984ba26b/`;
 
@@ -148,17 +156,37 @@ export const BACKTECH = [
     title: "FastAPI",
     image: back4,
   }, {
-    title: "MySql",
+    title: "Slim",
     image: back5,
   }, {
-    title: "MSSQL",
-    image: back6,
-  }, {
-    title: "Slim",
-    image: back7,
-  }, {
     title: "Lumen",
-    image: back8,
+    image: back6,
+  }
+];
+
+export const DATABASES = [
+  {
+    title: "MySql",
+    image: data1,
+  }, {
+    title: "MSSQL",
+    image: data2,
+  }, {
+    title: "PostgreSQL",
+    image: data3,
+  }
+];
+
+export const OTHERS = [
+  {
+    title: "GitHub",
+    image: other1,
+  }, {
+    title: "Bitbucket",
+    image: other2,
+  }, {
+    title: "Photoshop",
+    image: other3,
   }
 ];
 
