@@ -30,7 +30,7 @@ export const LINKEDIN_PROFILE = `https://www.linkedin.com/in/vijay-kl-4984ba26b/
 
 export const GITHUB_PROFILE = `https://github.com/vijayKL94`;
 
-export const HERO_CONTENT = `I am a passionate back-end developer with over 6 years of expertise in PHP and Python, specializing in crafting robust server-side solutions using frameworks such as Laravel and FastAPI. Proficient in database management, I have hands-on experience in MySQL, MSSQL, and MongoDB. Skilled in optimizing performance and scalability for web applications, I am committed to delivering high-quality solutions that drive business growth and enhance user experiences.`;
+export const HERO_CONTENT = `I am a passionate back-end developer with over 8 years of experience in PHP and Python, specializing in building robust and scalable server-side applications using frameworks like Laravel and FastAPI. I have hands-on expertise in database management with MySQL, MSSQL, and MongoDB, and a track record of optimizing web applications for performance and reliability. I am dedicated to delivering high-quality solutions that drive business growth and create seamless user experiences.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile backend developer with a passion for creating efficient and user-friendly web applications. With over  years of experience in PHP and Python, I specialize in crafting robust server-side solutions using frameworks such as Laravel, Lumen, Slim, Flask, and FastAPI. Additionally, I have hands-on experience with Shopify development, enabling businesses to build and customize e-commerce platforms with seamless integrations and optimized performance.
 My expertise also extends to front-end technologies including JavaScript, AJAX, HTML, CSS, Bootstrap, and TailwindCSS. I have a strong background in database management, with practical experience in MySQL, MSSQL, and MongoDB. Driven by a passion for innovation and problem-solving, I am committed to delivering high-quality solutions that drive business growth and elevate user experiences.`;
@@ -41,8 +41,8 @@ export const EXPERIENCES = [
     role: "Senior Software Engineer",
     company: "Tender Software India Pvt Ltd",
     direction: "left",
-    description: `Senior Software Developer at Tender Software India Pvt Ltd. I specialize in maintaining and enhancing web applications using a diverse tech stack. My primary focus includes working with the PHP Laravel framework for robust backend development and leveraging the Shopify platform to deliver tailored e-commerce solutions. I am responsible for ensuring optimal performance, scalability, and security across all web applications.`,
-    technologies: ["PHP", "JavaScript", "Laravel", "MySQL", "Shopify"],
+    description: `Senior Software Developer at Tender Software India Pvt. Ltd., specializing in building and maintaining web applications using PHP, mainly with the Laravel framework. I have experience creating customized Shopify e-commerce solutions, including theme design, feature updates, and third-party integrations. I have integrated payment gateways like Windcave, Kovena, and Flywire for hotel reservation and tourism websites built with Core PHP and Zend Framework. I have also developed tourism websites with custom CRM admin portals to manage content, bookings, and users, while supporting tasks like container shipment coordination and order tracking. I focus on building secure, fast, and reliable applications.`,
+    technologies: ["PHP", "JavaScript", "Laravel", "MySQL", "Shopify", "React", "Zend Framework" ],
   },
   {
     year: "Oct 2022 - Aug 2024",
